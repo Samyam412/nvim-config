@@ -12,5 +12,21 @@ nvim --headless "+Lazy! sync" +qa
 ## Notes
 
 - Requires Neovim 0.9+.
-- Some language servers/tools still need to exist on machine.
 - Most common tools install through `mason.nvim`.
+
+## Language Servers
+
+Installed through `mason.nvim` in this config:
+
+- `css-lsp`
+- `tailwindcss-language-server`
+- `typescript-language-server`
+
+Need to exist on machine manually:
+
+- `ruby-lsp`
+
+Project-dependent / optional:
+
+- `phpactor` if you set `lsp = "phpactor"`
+- `intelephense` if you set `lsp = "intelephense"`
